@@ -1,0 +1,251 @@
+/* 版心 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 快捷导航栏 */
+.shortcut {
+    height: 52px;
+    background-color: #333333;
+}
+
+.shortcut a {
+    color: #dcdcdc;
+}
+
+.shortcut ul {
+    font-size: 14px;
+    color: #dcdcdc;
+    float: right;
+}
+
+.shortcut ul li {
+    float: left;
+    line-height: 52px;
+}
+
+.shortcut ul li a {
+    padding: 0 16px;
+    border-right: 1px solid #666;
+}
+
+.shortcut ul li:last-child a {
+    border-right: 0;
+}
+
+.shortcut ul li a:hover {
+    color: rgb(180, 180, 255);
+}
+
+.shortcut ul li:last-child span {
+    display: inline-block;
+    width: 13px;
+    height: 18px;
+    background: url(../images/sprites.png) no-repeat -159px -69px;
+    vertical-align: middle;
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+/* 头部 */
+.header {
+    height: 130px;
+    background-color: white;
+}
+
+.header .wrapper {
+    height: 70px;
+    line-height: 70px;
+    margin: 30px auto;
+}
+
+.header .wrapper .logo {
+    float: left;
+    margin-left: 25px;
+    width: 207px;
+}
+
+.header .wrapper .logo h1 a {
+    display: block;
+
+    font-size: 0;
+    background: url(../images/logo.png) no-repeat;
+    background-size: cover;
+}
+
+.header .wrapper .nav {
+    float: left;
+    margin-left: 40px;
+}
+
+.header .wrapper .nav li {
+    float: left;
+    margin-right: 48px;
+}
+
+.header .wrapper .nav li a {
+    color: #333333;
+    font-size: 16px;
+    padding-bottom: 7px;
+}
+
+.header .wrapper .nav li a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+
+.header .wrapper .search {
+    float: left;
+    width: 172px;
+    height: 30px;
+    margin-left: 34px;
+    margin-top: 24px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.header .wrapper .search input {
+
+    float: left;
+    width: 141px;
+    height: 28px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    border: 0;
+}
+
+.header .wrapper .search input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.header .wrapper .search {
+    position: relative;
+}
+
+.header .wrapper .search span {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    display: inline-block;
+    width: 17px;
+    height: 37px;
+    background: url(../images/sprites.png) -80px -70px;
+}
+
+.header .wrapper .car {
+    position: relative;
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin-top: 24px;
+    margin-left: 15px;
+    background-color: green;
+    background: url(../images/sprites.png) -120px -70px;
+}
+
+.header .wrapper .car span {
+    position: absolute;
+    left: 14px;
+    top: -5px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+    line-height: 15px;
+    text-align: center;
+    color: white;
+}
+
+/*  底部区域*/
+.footer {
+    height: 343px;
+    background-color: #333333;
+}
+
+.footer .wrapper .top {
+    width: 1146px;
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .wrapper .top [class^="t"] {
+    width: 186px;
+    height: 58px;
+}
+
+.footer .wrapper .top span {
+    font-size: 28px;
+    color: white;
+}
+
+.footer .wrapper .top span::before {
+    content: '';
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    background: url(../images/sprites.png) no-repeat;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+.footer .wrapper .top .t2 span::before {
+    background: url(../images/sprites.png) no-repeat -65px 0;
+}
+
+.footer .wrapper .top .t3 span::before {
+    background: url(../images/sprites.png) no-repeat -130px 0;
+}
+
+.footer  .middle {
+    margin: 52px auto 41px;
+    width: 1393px;
+    height: 3px;
+    background-color: #434343;
+}
+.footer .bottom{
+    width: 537px;
+	height: 48px;
+	font-size: 14px;
+	color: #999999;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.footer .bottom ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.footer .bottom ul li a{
+    color: #999;
+    padding-right: 10px;
+    border-right: 1px solid #999;
+}
+.footer .bottom ul li:last-child a{
+    border-right: 0;
+}
+
+
+/* 电梯区域 */
+.elevantor{
+    position: fixed;
+    z-index: 999;
+    left: 91%;
+    top: 310px;
+    opacity: 0;
+    transition: all .8s;
+}
+.elevantor li{
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid pink;
+}
+.elevantor li:nth-child(3){
+    opacity: 0;
+    transition: all 1.2s;
+}
